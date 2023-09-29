@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/7972af805d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <div class="header--text-wrapper">
+          <h1 class="title">Available Cars</h1>
+          <p>There are 15 cars that match your criteria</p>
+        </div>
+        <div class="input-wrapper">
+          <div class="search-wrapper">
+            <input type="search" class="input-search" />
+            <button type="submit" class="search-btn">
+              <img src="assets/search.svg" />
+            </button>
+          </div>
+
+          <div class="options">
+            <button type="menu" class="filter-btn">
+              <img src="assets/menu.svg" />
+            </button>
+            <div class="filters">
+              <input
+                type="checkbox"
+                id="new-cars"
+                name="new-cars"
+                value="new-cars"
+              />
+              <label for="new-cars">New cars</label><br />
+
+              <input
+                type="checkbox"
+                id="used-cars"
+                name="used-cars"
+                value="used-cars"
+              />
+              <label for="used-cars">Used cars</label><br />
+
+              <input
+                type="checkbox"
+                id="dealership"
+                name="dealership"
+                value="dealership"
+              />
+              <label for="dealership">Dealership</label><br />
+
+              <input
+                type="checkbox"
+                id="by-owner"
+                name="by-owner"
+                value="by-owner"
+              />
+              <label for="by-owner">For sale by owner</label><br />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="car-listings">
+        <ul class="listings-header desktop">
+          <li>Car Details</li>
+          <li>Location</li>
+          <li>Price</li>
+          <li>Action</li>
+        </ul>
+
+        <ul class="car-list">
+          <li class="car">
+            <h2 class="car-name">2017 Toyota Highlander V4</h2>
+            <p class="location">1944 Scrimba Ln<br />Youngstown, OH 44481</p>
+
+            <div class="price-wrap">
+              <h3 class="price">$17,400</h3>
+              <i
+                onClick="changeHeart(this)"
+                class="fa-regular fa-heart fa-xl"
+                alt="heart icon"
+              ></i>
+            </div>
+          </li>
+          <li class="car">
+            <h2 class="car-name">2012 Toyota Tundra 4x4</h2>
+            <p class="location">
+              301 Fantasy Dr<br />
+              Beverly Hills, CA 90210
+            </p>
+
+            <div class="price-wrap">
+              <h3 class="price">$23,900</h3>
+              <i
+                onClick="changeHeart(this)"
+                class="fa-regular fa-heart fa-xl"
+                alt="heart icon"
+              ></i>
+            </div>
+          </li>
+          <li class="car">
+            <h2 class="car-name">2004 Dodge Ram 4x4</h2>
+            <p class="location">9104 Falsety Ave<br />AnonyVille, FL 40440</p>
+
+            <div class="price-wrap">
+              <h3 class="price">$7,988</h3>
+              <i
+                onClick="changeHeart(this)"
+                class="fa-regular fa-heart fa-xl"
+                alt="heart icon"
+              ></i>
+            </div>
+          </li>
+          <li class="car">
+            <h2 class="car-name">2021 Tesla Model 3</h2>
+            <p class="location">993 Fiscal St<br />Boulder, CO 93391</p>
+
+            <div class="price-wrap">
+              <h3 class="price">$37,490</h3>
+              <i
+                onClick="changeHeart(this)"
+                class="fa-regular fa-heart fa-xl"
+                alt="heart icon"
+              ></i>
+            </div>
+          </li>
+          <li class="car">
+            <h2 class="car-name">2017 Toyota Highlander V4</h2>
+            <p class="location">1944 Scrimba Ln<br />Youngstown, OH 44481</p>
+
+            <div class="price-wrap">
+              <h3 class="price">$17,400</h3>
+              <i
+                onClick="changeHeart(this)"
+                class="fa-regular fa-heart fa-xl"
+                alt="heart icon"
+              ></i>
+            </div>
+          </li>
+          <li class="car">
+            <h2 class="car-name">2012 Toyota Tundra 4x4</h2>
+            <p class="location">
+              301 Fantasy Dr<br />
+              Beverly Hills, CA 90210
+            </p>
+
+            <div class="price-wrap">
+              <h3 class="price">$23,900</h3>
+              <i
+                onClick="changeHeart(this)"
+                class="fa-regular fa-heart fa-xl"
+                alt="heart icon"
+              ></i>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
